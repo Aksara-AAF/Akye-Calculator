@@ -1,8 +1,6 @@
 #include <stdio.h>
 
 
-int main(){
-
 float division(float n1, float n2);
 
 float addition(float n1, float n2);
