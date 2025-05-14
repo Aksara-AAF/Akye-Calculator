@@ -56,17 +56,16 @@ int main(){
             break;
 
 		case 4:
-			printf("Which number goes first");
-			scanf("%d", choice);
+			printf("Which number goes first ");
+			scanf("%d", &choice);
 			if(choice == 1){
 				output = division(n1, n2);
-				break;
+				printf("Dividing...");
 			else if(choice == 2){
 				output = division(n2, n1);
-				break;
+				printf("Dividing....");
 			else if(choice != 1 && != 2){
 				printf("invalid");
-				break;
 			printf("%f", output);
 			break;
 
