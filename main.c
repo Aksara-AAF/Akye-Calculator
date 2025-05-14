@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 float division(float n1, float n2);
 
 float addition(float n1, float n2);
@@ -11,7 +10,6 @@ float subtract(float n1, float n2);
 
 int main()
 {
-
 	int choice, choice2;
 	float output, n1, n2;
 
@@ -64,32 +62,34 @@ int main()
 
 		break;
 
-	case 4:
-		printf("Which number goes first ");
-		scanf("%d", &choice);
-		if (choice == 1)
-		{
-			output = division(n1, n2);
-			printf("Dividing...");
-		}
-		else if (choice == 2)
-		{
-			output = division(n2, n1);
-			printf("Dividing....");
-		}
-		else if (choice != 1 && choice != 2)
-		{
-			printf("invalid");
-			printf("%.2f", output);
-			break;
-		}
+    case 4:
+	    printf("Which number should be first? (1 or 2): ");
+	    scanf("%d", &choice2);
+
+	    if (choice2 == 1)
+	    {
+		    printf("Dividing...\n");
+		    output = division(n1, n2);
+		    printf("%.2f", output);
+	    }
+	    else if (choice2 == 2)
+	    {
+		    printf("Dividing...\n");
+		    output = division(n2, n1);
+		    printf("%.2f", output);
+	    }
+	    else
+	    {
+		    printf("Invalid, try again.");
+	    }
+	    break;
+
+
 	default:
 		printf("Invalid choice, try again.");
 		break;
 	}
 }
-
-
 
 float addition(float n1, float n2)
 {
@@ -110,4 +110,3 @@ float subtract(float n1, float n2)
 {
 	return n1 - n2;
 }
-
