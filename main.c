@@ -1,0 +1,73 @@
+#include <stdio.h>
+
+int main(){
+	int choice, choice2;
+	float output, n1, n2;
+	
+	printf("What would you like to do?\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n");
+	scanf("%d", &choice);
+	
+	printf("Enter first number = ");
+	scanf("%d", &n1);
+	
+	printf("Enter second number = ");
+	scanf("%d", &n2);
+	
+	switch(choice){
+		case 1:
+			printf("Adding...\n");
+            
+			// Code here
+            
+            break;
+
+		case 2:
+			printf("Which number should be first? ");
+			scanf("%d", &choice2);
+			if(choice2 == 1){
+				printf("Subtracting...\n");
+				output = n1 - n2;
+				printf("%f", output);
+				break;
+			}
+			else if(choice2 != 1 && choice2 != 2){
+				printf("Invalid, try again.");
+				break;
+			}
+			printf("Subtracting...\n");
+            
+            // Code here
+            
+            break;
+			
+		case 3:
+			printf("Multiplying...\n");
+
+            // Code here
+
+            break;
+
+		case 4:
+			printf("Which number should be first? ");
+			scanf("%d", &choice2);
+			if(choice2 == 1){
+				printf("Dividing...\n");
+				output = n1 / n2;
+				printf("%f", output);
+				break;
+			}
+			else if(choice2 != 1 && choice2 != 2){
+				printf("Invalid, try again.");
+				break;
+			}
+			printf("Dividing...\n");
+
+            // Code here
+
+			break;
+
+        default: 
+            printf("Invalid choice, try again.");
+            break;
+	}
+}
