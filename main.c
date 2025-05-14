@@ -38,8 +38,8 @@ int main()
 		if (choice2 == 1)
 		{
 			printf("Subtracting...\n");
-			output = n1 - n2;
-			printf("%f", output);
+			output = subtract(n1, n2);
+			printf("%.2f", output);
 			break;
 		}
 		else if (choice2 != 1 && choice2 != 2)
@@ -49,7 +49,8 @@ int main()
 		}
 		printf("Subtracting...\n");
 
-		// Code here
+		output = subtract(n2, n1);
+		printf("%.2f", output);
 
 		break;
 
@@ -57,7 +58,7 @@ int main()
 		printf("Multiplying...\n");
 
 		output = Mult(n1, n2);
-		printf("%f", output);
+		printf("%.2f", output);
 
 		break;
 
@@ -77,7 +78,7 @@ int main()
 		else if (choice != 1 && choice != 2)
 		{
 			printf("invalid");
-			printf("%f", output);
+			printf("%.2f", output);
 			break;
 		}
 	default:
