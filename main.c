@@ -56,27 +56,23 @@ int main(){
             break;
 
 		case 4:
-			printf("Which number should be first? ");
-			scanf("%d", &choice2);
-			if(choice2 == 1){
-				printf("Dividing...\n");
-				output = n1 / n2;
-				printf("%f", output);
+			printf("Which number goes first");
+			scanf("%d", choice);
+			if(choice == 1){
+				output = division(n1, n2);
 				break;
-			}
-			else if(choice2 != 1 && choice2 != 2){
-				printf("Invalid, try again.");
+			else if(choice == 2){
+				output = division(n2, n1);
 				break;
-			}
-			printf("Dividing...\n");
-
-            // Code here
-
+			else if(choice != 1 && != 2){
+				printf("invalid");
+				break;
+			printf("%f", output);
 			break;
 
         default: 
             printf("Invalid choice, try again.");
-            break;
+	break;
 	}
 }
 
