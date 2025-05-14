@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+float division(float n1, float n2);
+
 float addition(float n1, float n2);
 
 float Mult(float n1, float n2)
