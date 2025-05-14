@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+float Mult(float n1, float n2)
+
 int main(){
 	int choice, choice2;
 	float output, n1, n2;
