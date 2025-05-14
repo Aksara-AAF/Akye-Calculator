@@ -1,73 +1,115 @@
 #include <stdio.h>
 
+<<<<<<< HEAD
 int main(){
+=======
+float division(float n1, float n2);
+
+float addition(float n1, float n2);
+
+float Mult(float n1, float n2);
+
+float subtract(float n1, float n2);
+
+int main()
+{
+>>>>>>> ca95d7916d8eab0436ecc0a7eb13a5f68a8619f8
 	int choice, choice2;
 	float output, n1, n2;
-	
+
 	printf("What would you like to do?\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n");
 	scanf("%d", &choice);
-	
+
 	printf("Enter first number = ");
-	scanf("%d", &n1);
-	
+	scanf("%f", &n1);
+
 	printf("Enter second number = ");
-	scanf("%d", &n2);
-	
-	switch(choice){
-		case 1:
-			printf("Adding...\n");
-            
-			// Code here
-            
-            break;
+	scanf("%f", &n2);
 
-		case 2:
-			printf("Which number should be first? ");
-			scanf("%d", &choice2);
-			if(choice2 == 1){
-				printf("Subtracting...\n");
-				output = n1 - n2;
-				printf("%f", output);
-				break;
-			}
-			else if(choice2 != 1 && choice2 != 2){
-				printf("Invalid, try again.");
-				break;
-			}
+	switch (choice)
+	{
+	case 1:
+		printf("Adding...\n");
+
+		output = addition(n1, n2);
+		printf("%.2f", output);
+
+		break;
+
+	case 2:
+		printf("Which number should be first? ");
+		scanf("%d", &choice2);
+		if (choice2 == 1)
+		{
 			printf("Subtracting...\n");
-            
-            // Code here
-            
-            break;
-			
-		case 3:
-			printf("Multiplying...\n");
-
-            // Code here
-
-            break;
-
-		case 4:
-			printf("Which number should be first? ");
-			scanf("%d", &choice2);
-			if(choice2 == 1){
-				printf("Dividing...\n");
-				output = n1 / n2;
-				printf("%f", output);
-				break;
-			}
-			else if(choice2 != 1 && choice2 != 2){
-				printf("Invalid, try again.");
-				break;
-			}
-			printf("Dividing...\n");
-
-            // Code here
-
+			output = subtract(n1, n2);
+			printf("%.2f", output);
 			break;
+		}
+		else if (choice2 != 1 && choice2 != 2)
+		{
+			printf("Invalid, try again.");
+			break;
+		}
+		printf("Subtracting...\n");
 
-        default: 
-            printf("Invalid choice, try again.");
-            break;
+		output = subtract(n2, n1);
+		printf("%.2f", output);
+
+		break;
+
+	case 3:
+		printf("Multiplying...\n");
+
+		output = Mult(n1, n2);
+		printf("%.2f", output);
+
+		break;
+
+	case 4:
+		printf("Which number goes first ");
+		scanf("%d", &choice);
+		if (choice == 1)
+		{
+			output = division(n1, n2);
+			printf("Dividing...");
+		}
+		else if (choice == 2)
+		{
+			output = division(n2, n1);
+			printf("Dividing....");
+		}
+		else if (choice != 1 && choice != 2)
+		{
+			printf("invalid");
+			printf("%.2f", output);
+			break;
+		}
+	default:
+		printf("Invalid choice, try again.");
+		break;
 	}
 }
+<<<<<<< HEAD
+=======
+
+float addition(float n1, float n2)
+{
+	return n1 + n2;
+}
+
+float Mult(float n1, float n2)
+{
+	return n1 * n2;
+}
+
+float division(float n1, float n2)
+{
+	return n1 / n2;
+}
+
+float subtract(float n1, float n2)
+{
+	return n1 - n2;
+}
+>>>>>>> ca95d7916d8eab0436ecc0a7eb13a5f68a8619f8
