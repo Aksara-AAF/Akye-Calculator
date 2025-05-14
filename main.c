@@ -68,33 +68,40 @@ int main()
 		{
 			output = division(n1, n2);
 			printf("Dividing...");
-			else if (choice == 2)
-			{
-				output = division(n2, n1);
-				printf("Dividing....");
-				else if (choice != 1 && != 2)
-				{
-					printf("invalid");
-					printf("%f", output);
-					break;
+		}
+		else if (choice == 2)
+		{
+			output = division(n2, n1);
+			printf("Dividing....");
+		}
+		else if (choice != 1 && choice != 2)
+		{
+			printf("invalid");
+			printf("%f", output);
+			break;
+		}
+	default:
+		printf("Invalid choice, try again.");
+		break;
+	}
+}
 
-				default:
-					printf("Invalid choice, try again.");
-					break;
-				}
-			}
+float addition(float n1, float n2)
+{
+	return n1 + n2;
+}
 
-			float addition(float n1, float n2)
-			{
-				return n1 + n2;
-			}
+float Mult(float n1, float n2)
+{
+	return n1 * n2;
+}
 
-			float Mult(float n1, float n2)
-			{
-				return n1 * n2;
-			}
+float division(float n1, float n2)
+{
+	return n1 / n2;
+}
 
-			float division(float n1, float n2)
-			{
-				return n1 / n2;
-			}
+float subtract(float n1, float n2)
+{
+	return n1 - n2;
+}
