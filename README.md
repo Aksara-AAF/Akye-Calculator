@@ -1,9 +1,13 @@
 # Akye-Calculator
 
 Leader : Akbar Anvasa Faraby
+
 Addition : Zhafarrel A P K
+
 Subtract : Muhammad Daffa Rizki
+
 Multiplication : Rana Aqila K
+
 Division : Ahmad Malik P
 
 Commit step:
