@@ -10,16 +10,17 @@ int main(){
 	scanf("%d", &choice);
 	
 	printf("Enter first number = ");
-	scanf("%d", &n1);
+	scanf("%f", &n1);
 	
 	printf("Enter second number = ");
-	scanf("%d", &n2);
+	scanf("%f", &n2);
 	
 	switch(choice){
 		case 1:
 			printf("Adding...\n");
             
-			// Code here
+			output = addition(n1, n2);
+			printf("%.2f", output);
             
             break;
 
