@@ -2,6 +2,8 @@
 
 float addition(float n1, float n2);
 
+float Mult(float n1, float n2)
+
 int main(){
 	int choice, choice2;
 	float output, n1, n2;
@@ -46,7 +48,8 @@ int main(){
 		case 3:
 			printf("Multiplying...\n");
 
-            // Code here
+            output = Mult(n1, n2);
+			printf("%f", output);
 
             break;
 
@@ -77,4 +80,8 @@ int main(){
 
 float addition(float n1, float n2){
 	return n1 + n2;
+}
+
+float Mult(float n1, float n2){
+	return n1 * n2;
 }
