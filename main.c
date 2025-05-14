@@ -87,3 +87,7 @@ float addition(float n1, float n2){
 float Mult(float n1, float n2){
 	return n1 * n2;
 }
+
+float division(float n1, float n2){
+	return n1/n2;
+}
