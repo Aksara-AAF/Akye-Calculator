@@ -45,7 +45,8 @@ int main(){
 		case 3:
 			printf("Multiplying...\n");
 
-            // Code here
+            output = Mult(n1, n2);
+			printf("%f", output);
 
             break;
 
